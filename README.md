@@ -1,4 +1,4 @@
-#puppet-hieradata-staging
+#puppet-hieradata-testing
 
 #### Table of Contents
 
@@ -28,13 +28,13 @@ If you were to edit the repo now you would be editing the Master Branch.
 To switch to a specific branch specify one of the names branch names above
 replacing the name of the branch in the following command.
 
-  git branch staging
+  git branch testing
 
 To commit changes upstream use the following example as a guide replacing the name of the branch with the current branchname 
 
   git add *
   git commit -m "some changes to Production"
-  git push origin staging
+  git push origin testing
 
 ## Reference
 
