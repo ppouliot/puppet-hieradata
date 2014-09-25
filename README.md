@@ -1,4 +1,4 @@
-#puppet-hieradata
+#puppet-hieradata-production
 
 #### Table of Contents
 
@@ -11,27 +11,11 @@
 
 ## Overview
 
-This is a sample hiera directory to assit in bootstrapping R10K and Puppet.
-We will utilize R10K's ability to consume the git Branch to populate our
-puppetmaster properly with hiera.
-
+This is the Production Hieradata Directory
 
 ## Module Description
 
-This contains the example hiera data directory structure.
-
-We will be utilzing git branches, R10K, and The Puppet Environments and Rolls concepts.
-to dynamically create our data structure for puppet infrastructure.
-See the references below for futher reading.  
-
-The following Git branches exist within the repository.
-
-    - Master      (The Master Branch )
-    - production  ( Production Branch: Used for storing production values?)
-    - development ( Development Branch: Data to support rapid development?)
-    - testing     ( The Testing: QA and CI/CD data?)
-    - staging     ( The Staging: Pre production data )
-
+Put Production Hiera here.
 
 ## Usage
 
@@ -51,11 +35,6 @@ To commit changes upstream use the following example as a guide replacing the na
   git add *
   git commit -m "some changes to Production"
   git push origin production
-
-
-
-
-
 
 ## Reference
 
