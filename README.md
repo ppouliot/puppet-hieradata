@@ -1,4 +1,4 @@
-#puppet-hieradata-testing
+#puppet-hieradata-development
 
 #### Table of Contents
 
@@ -33,7 +33,7 @@ replacing the name of the branch in the following command.
 To commit changes upstream use the following example as a guide replacing the name of the branch with the current branchname 
 
   git add *
-  git commit -m "I made some changes to testing hiera data"
+  git commit -m "I made some changes to development hiera data"
   git push origin development
 
 ## Reference
