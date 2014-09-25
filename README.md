@@ -33,7 +33,7 @@ replacing the name of the branch in the following command.
 To commit changes upstream use the following example as a guide replacing the name of the branch with the current branchname 
 
   git add *
-  git commit -m "some changes to Production"
+  git commit -m "I made some changes to Production hiera data"
   git push origin production
 
 ## Reference
