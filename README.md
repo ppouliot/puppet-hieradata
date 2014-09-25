@@ -44,7 +44,7 @@ If you were to edit the repo now you would be editing the Master Branch.
 To switch to a specific branch specify one of the names branch names above
 replacing the name of the branch in the following command.
 
-  git branch production
+  git checkout production
 
 To commit changes upstream use the following example as a guide replacing the name of the branch with the current branchname 
 
