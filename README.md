@@ -1,4 +1,4 @@
-#puppet-hieradata-development
+#puppet-hieradata-testing
 
 #### Table of Contents
 
@@ -28,12 +28,12 @@ If you were to edit the repo now you would be editing the Master Branch.
 To switch to a specific branch specify one of the names branch names above
 replacing the name of the branch in the following command.
 
-  git branch development
+  git checkout development
 
 To commit changes upstream use the following example as a guide replacing the name of the branch with the current branchname 
 
   git add *
-  git commit -m "some changes to Development hieradata"
+  git commit -m "I made some changes to testing hiera data"
   git push origin development
 
 ## Reference
