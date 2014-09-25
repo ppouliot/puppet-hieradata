@@ -28,12 +28,12 @@ If you were to edit the repo now you would be editing the Master Branch.
 To switch to a specific branch specify one of the names branch names above
 replacing the name of the branch in the following command.
 
-  git branch staging
+  git checkout staging
 
 To commit changes upstream use the following example as a guide replacing the name of the branch with the current branchname 
 
   git add *
-  git commit -m "some changes to Production"
+  git commit -m "I made some changes to staging hiera data"
   git push origin staging
 
 ## Reference
