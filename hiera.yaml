@@ -3,7 +3,11 @@
   - yaml
 :hierarchy:
   - "%{clientcert}"
-  - "%{environment}"
+  - "%{hostname}"
+#  - "%{fqdn}"
+  - "%{calling_module}"
+  - common
+#  - "%{environment}"
 # Need to create a fact for datacenter location to include in each site
 #  - "%{datacenter_location}"
   - common
@@ -17,3 +21,5 @@
 #  :datadir: "/etc/puppetlabs/puppet/environments/%{environment}/hieradata"
 # Puppet OpenSource
 #  :datadir: "/etc/puppet/environments/%{environment}/hiera"
+  :datadir: '/etc/puppet/hiera/%{environment}'
+
