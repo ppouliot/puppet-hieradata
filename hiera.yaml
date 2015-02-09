@@ -1,15 +1,11 @@
 ---
 :backends:
   - yaml
+  - eyaml
 :hierarchy:
   - "%{clientcert}"
-  - "%{hostname}"
-#  - "%{fqdn}"
+  - "%{fqdn}"
   - "%{calling_module}"
-  - common
-#  - "%{environment}"
-# Need to create a fact for datacenter location to include in each site
-#  - "%{datacenter_location}"
   - common
 
 :yaml:
@@ -17,9 +13,9 @@
 # - /var/lib/hiera on *nix
 # - %CommonAppData%\PuppetLabs\hiera\var on Windows
 # When specifying a datadir, make sure the directory exists.
-# Puppet Enterprise
-#  :datadir: "/etc/puppetlabs/puppet/environments/%{environment}/hieradata"
-# Puppet OpenSource
-#  :datadir: "/etc/puppet/environments/%{environment}/hiera"
   :datadir: '/etc/puppet/hiera/%{environment}'
-
+:eyaml:
+  :datadir: '/etc/puppet/hiera/%{environment}'
+  :extension: "yaml"
+  :pkcs7_private_key: /etc/puppet/secure/keys/private_key.pkcs7.pem
+  :pkcs7_public_key: /etc/puppet/secure/keys/public_key.pkcs7.pem
